@@ -7,7 +7,7 @@ DB = 'patients.db'
 
 @app.route('/')
 def home():
-    return "<h1>Hello from HMIS</h1>"
+    return render_template("dashboard.html")
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
